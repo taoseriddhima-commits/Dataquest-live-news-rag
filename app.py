@@ -7,6 +7,11 @@ import pathway as pw
 
 load_dotenv()
 
+# API KEY SAFETY CHECK 
+if not os.getenv("OPENAI_API_KEY"):
+    print("OPENAI_API_KEY not set. Please configure .env before running.")
+    exit(1)
+    
 # OpenAI 
 client = OpenAI(api_key=os.getenv("OPENAI_API_KEY")) 
 
