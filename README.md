@@ -94,6 +94,9 @@ NEWS_API_KEY=your_newsapi_key
 OPENAI_API_KEY=your_openai_key
 ```
 
+If the OpenAI API key is not configured, the application will exit gracefully
+with a clear message indicating that the required environment variable is missing.
+
 ### Environment Variables & Security
 
 This project uses API keys for external services (NewsAPI and OpenAI).  
