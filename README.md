@@ -94,6 +94,21 @@ NEWS_API_KEY=your_newsapi_key
 OPENAI_API_KEY=your_openai_key
 ```
 
+### Environment Variables & Security
+
+This project uses API keys for external services (NewsAPI and OpenAI).  
+For security reasons, **API keys are not committed to the public repository**.
+
+- The `.env` file is intentionally excluded from version control.
+- A template file `.env.example` is provided in the repository to indicate
+  the required environment variables.
+
+Before running the project, evaluators should:
+1. Create a local `.env` file using `.env.example` as reference
+2. Add their own valid API keys
+
+This follows standard industry practices for handling sensitive credentials.
+
 ### 3. Run the System
 
 Terminal 1 (RAG system)
