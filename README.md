@@ -57,7 +57,7 @@ dataquest-live-news-rag/
 ├── write_news.py       # Live news fetcher (streams news into data/)
 ├── requirements.txt    # Python dependencies
 ├── README.md           # Project documentation
-├── .env                # API keys (not committed)
+├── .env.example        # Environment variable template (API keys not committed)
 │
 ├── data/               # Live data stream (JSON files written here)
 │   └── news_*.json
